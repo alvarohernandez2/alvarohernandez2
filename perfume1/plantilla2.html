@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfumes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* NAVBAR */
+    .w3-bar {
+      letter-spacing: 2px;
+    }
+
+    /* SLIDER */
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover; /* CLAVE PARA LA CALIDAD */
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .mySlides img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="invierno.html" class="w3-bar-item w3-button w3-padding-large">INVIERNO</a>
+    <a href="verano.html" class="w3-bar-item w3-button w3-padding-large">VERANO</a>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-right">
+      🔍
+    </a>
+  </div>
+</div>
+
+<!-- Slider -->
+<div class="w3-content" style="max-width:2000px; margin-top:46px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/slider1.webp" alt="Perfumes masculinos">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Perfumes</h3>
+      <p><b>¡Todo sobre perfumes!</b></p>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/slider2.webp" alt="Perfumes de invierno">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Perfumes</h3>
+      <p><b>¡Todo sobre perfumes!</b></p>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/slider3.webp" alt="Perfumes famosos">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Perfumes</h3>
+      <p><b>¡Todo sobre perfumes!</b></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- JavaScript del slider -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+</body>
+</html>
