@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+  
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="hogar.html" class="w3-bar-item w3-button w3-padding-large">HOGAR</a>
+    <a href="invierno.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INVIERNO</a>
+    <a href="verano.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VERANO</a>
+    <div class="w3-dropdown-hover w3-hide-small">    
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">FoodAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- 
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div> Top menu -->
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw24a244fd/Y0785220/Y0785220_F078524009_E01_RHC.jpg?sw=640" alt="Sandwich" style="width:100%">
+      <h3>Dior Savage Eau de Parfum</h3>
+      <p>Notas de bergamota, pimienta y ambroxan. Es un perfume amaderado, intenso y versatil, elegante para dia y noche</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.media.amplience.net/i/harryrosen/56730046" style="width:100%">
+      <h3>Tom Ford Tobacco Vanille</h3>
+      <p>Notas de tabaco, vainilla y especias. Es un perfume muy calido y dulce, profundo e ideal para noches frias y ocasiones especiales.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Yves Saint Laurent La Nuit de l’Homme</h3>
+      <p>Notas de cardamomo, cedro e incienso. Perfume muy sensual y especiado, perfecto para citas nocturnas</p>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Bleu de Chanel Eau de Parfum</h3>
+      <p>Notas citricas, de sándalo e incienso. Es un perfume amaderado y aromático, fresco pero con presencia, elegante para cualquier ocasión invernal.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>Armani Stronger With You</h3>
+      <p>Notas de vainilla, castaña, canela y especias. Es un perfume dulce y calido, ideal para salidas informales y noches frias</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Jean Paul Gaultier Le Male Le Parfume</h3>
+      <p>Notas de cardamomo, lavanda, vainilla y ámbar. Es un perfume con un tono amaderado oriental con dulzura envolvente, ideal para el uso diario y citas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>One Million Parfume</h3>
+      <p>Notas de canela, rosa, cuero, ámbar y pachulí. Es un perfume especiado-amaderado, calido y seductor, perfecto para noches y eventos sociales en frio.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Givenchy Gentleman Boisée EDP</h3>
+      <p>Notas de madera de cedro, pino, vetiver y sándalo. Es un perfume amaderado con un toque balsámico, perfecto para conjuntar con un outfit elegante y sotisficado.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="hogar.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+ 
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
