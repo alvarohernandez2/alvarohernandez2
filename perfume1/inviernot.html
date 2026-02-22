@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+  
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="hogar.html" class="w3-bar-item w3-button w3-padding-large">HOGAR</a>
+    <a href="invierno.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INVIERNO</a>
+    <a href="verano.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VERANO</a>
+    <div class="w3-dropdown-hover w3-hide-small">    
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">FoodAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- 
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div> Top menu -->
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw24a244fd/Y0785220/Y0785220_F078524009_E01_RHC.jpg?sw=640" alt="Sandwich" style="width:100%">
+      <h3>Azzaro the Most Wanted EDP Intensly</h3>
+      <p>Notas de cardamono, ambarwood y maderas calidas. Es un perfume intenso, cálido y adictivo, ideal para noches y salidas especiales de invierno.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.media.amplience.net/i/harryrosen/56730046" style="width:100%">
+      <h3>Dior Homme Intense</h3>
+      <p>Notas de iris, cedro y vetiver. Sotisficado y profundo, ideal para frio y citas formales.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.vesira.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/8/2/821_2.jpg" alt="Yves Saint Laurent La Nuit de l'homme" style="width:100%">
+      <h3>Armani Code Parfume</h3>
+      <p>Notas de bergamota, iris y cedro. Es un perfume elegante y calido, perfecto para la noche.</p>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_i1GfZ3PUxVkNZqybDO58S9abB0MOAxWliw&s" alt="Pasta and Wine" style="width:100%">
+      <h3>Jean Paul Gaultier Scandal Pour Homme</h3>
+      <p>Notas de mandarina, caramelo y vetiver. Es un perfume de perfil dulce-amaderado con toque cítrico, ideal para noches de invierno.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>Jean Paul Gaultier Le Beau Le Parfume</h3>
+      <p>Notas de piña, jengibre y ciprés. Perfume sensual y cremoso, con toque dulce, perfecto para planes de noche.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Jean Paul Gaultier Le Male Le Parfume</h3>
+      <p>Notas de cardamomo, lavanda, vainilla y ámbar. Es un perfume con un tono amaderado oriental con dulzura envolvente, ideal para el uso diario y citas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>One Million Parfume</h3>
+      <p>Notas de canela, rosa, cuero, ámbar y pachulí. Es un perfume especiado-amaderado, calido y seductor, perfecto para noches y eventos sociales en frio.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Givenchy Gentleman Boisée EDP</h3>
+      <p>Notas de madera de cedro, pino, vetiver y sándalo. Es un perfume amaderado con un toque balsámico, perfecto para conjuntar con un outfit elegante y sotisficado.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="inviernod.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+
+ 
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h" target="_blank">plantilla</a></p>
+</footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
 
